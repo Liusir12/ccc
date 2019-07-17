@@ -19,7 +19,7 @@ public class Client {
 	private static final int port=9527;
 	public static void main(String[] args) throws UnknownHostException, IOException {
 		Socket soc = new Socket("192.168.4.4", port);
-		System.out.println("已连接");
+		System.out.println("已连接11");
 		new GetData(new DataInputStream(soc.getInputStream())).start();
 		new SendData(new DataOutputStream(soc.getOutputStream())).start();
 	}
